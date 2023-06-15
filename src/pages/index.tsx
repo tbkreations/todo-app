@@ -7,8 +7,8 @@ import { useState } from "react";
 import { AnimatePresence, MotionConfig } from "framer-motion";
 import TaskInput from "@/components/TaskInput";
 
-
 export default function Home() {
+  var greetingMessage = "Hello computer world!";
 
   return (
     <>
@@ -23,10 +23,8 @@ export default function Home() {
           <h1>Todo</h1>
         </div>
         <div className={styles.Input}>
-          <TaskInput></TaskInput>
         </div>
-        <div className={styles.ItemsContainer}>
-        </div>
+        <div className={styles.ItemsContainer}></div>
       </main>
     </>
   );
